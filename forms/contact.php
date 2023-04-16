@@ -37,9 +37,8 @@ if (filter_var($php_email, FILTER_VALIDATE_EMAIL)) {
 		$php_sendmessage = wordwrap($php_sendmessage, 70);
 		
 		// Send mail by PHP Mail Function
-		// ini_set($php_sendmessage, $php_headers);
 		mail($php_main_email, $php_subject, $php_sendmessage, $php_headers);
-		echo "";
+		//echo "$php_main_email . $php_subject . $php_sendmessage . $php_headers";
 	
 	
 } else {
